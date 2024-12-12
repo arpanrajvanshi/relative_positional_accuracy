@@ -1,0 +1,307 @@
+/* General Styles */
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+h2 {
+  margin-top: 50px;
+  text-align: center;
+  color: #444;
+  font-size: 1.5em;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left-panel {
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.right-panel {
+  flex: 2;
+  min-width: 300px;
+}
+
+.file-input-container {
+  margin-bottom: 15px;
+}
+
+.file-input-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.file-input-container input[type="file"] {
+  display: block;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.file-input-container .file-name {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.upload-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+}
+
+.metrics-display {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.metrics-display h3 {
+  margin-top: 0;
+  color: #555;
+  font-size: 1.2em;
+}
+
+.metrics-display p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.save-button:hover {
+  background-color: #218838;
+}
+
+.map-container {
+  position: relative;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.legend {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 10px;
+  left:20px;
+  width: 200px;
+  z-index: 1000;
+}
+
+.legend h3 {
+  margin-top: 0;
+  font-size: 1em;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+}
+
+.legend-color.red {
+  background-color: red;
+}
+
+.legend-color.green {
+  background-color: green;
+}
+
+.legend-color.red-line {
+  background-color: transparent;
+  border-bottom: 3px solid red;
+  width: 20px;
+}
+
+.legend-color.green-line {
+  background-color: transparent;
+  border-bottom: 3px solid green;
+  width: 20px;
+}
+
+.file-grid {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.file-grid table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.file-grid th,
+.file-grid td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.file-grid th {
+  background-color: #f2f2f2;
+  color: #555;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  margin: 0 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 50px;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.modal-content .close {
+  color: #aaa;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-content .close:hover,
+.modal-content .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.modal-content th,
+.modal-content td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.modal-content th {
+  background-color: #f2f2f2;
+  color: #555;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .map-container {
+    width: 100%;
+  }
+
+  .legend {
+    position: static;
+    margin-top: 10px;
+  }
+}

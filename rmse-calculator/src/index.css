@@ -1,0 +1,54 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+form {
+  margin: 20px auto;
+  width: 300px;
+  text-align: left;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="file"] {
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.calculations-grid {
+  margin: 20px auto;
+  width: 600px;
+}
+
+.calculations-grid h2 {
+  text-align: center;
+}
+
+.calculations-grid table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calculations-grid th, .calculations-grid td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.calculations-grid th {
+  background-color: #f2f2f2;
+}
